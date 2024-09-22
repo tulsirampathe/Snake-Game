@@ -1,0 +1,147 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #282c34;
+  font-family: "Press Start 2P", cursive;
+  color: #fff;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+#game-container {
+  text-align: center;
+}
+
+canvas {
+  background: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+#score-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #00ff00;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #00ff00;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  text-align: center;
+  margin-left: 20px;
+  flex: 1;
+}
+
+#score-container h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #00ff00;
+}
+
+#score-container #score,
+#score-container #best-score {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+/* General Button Styles */
+#restart-btn, #mode-btn, .difficulty-btn,
+#start-btn, #pause-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: "Press Start 2P", cursive;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  margin-top: 20px;
+}
+
+/* Hover effect on buttons */
+#restart-btn:hover, #mode-btn:hover, .difficulty-btn:hover,
+#start-btn:hover, #pause-btn:hover {
+  background-color: #45a049;
+  box-shadow: 0 0 8px rgba(0, 255, 0, 0.7);
+}
+
+/* Disabled Button Style */
+button:disabled {
+  background-color: #555; 
+  cursor: not-allowed;
+  opacity: 0.5; 
+  box-shadow: none; 
+}
+
+/* Start and Pause Button Styles */
+#start-btn, #pause-btn {
+  margin-top: 20px;
+}
+
+/* Start Button Disabled (when game is running) */
+#start-btn:disabled, #pause-btn:disabled, #restart-btn:disabled{
+  background-color: #ccc; 
+  cursor: not-allowed;
+}
+
+/* Pause Button: Toggle Between Pause and Resume State */
+#pause-btn.paused {
+  background-color: #ff4500; /* Change to red when paused */
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.7);
+}
+
+#pause-btn.resumed {
+  background-color: #4caf50; /* Normal state when resumed */
+}
+
+/* Active Mode Button (when clicked) */
+#mode-btn.active {
+  background-color: #ff4500; /* Change to a noticeable color */
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* Stronger shadow */
+}
+
+#defaultMode.active{
+  background-color: #ff4500; /* Change to red when active */
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+}
+
+/* Active Difficulty Button (when clicked) */
+.difficulty-btn.active {
+  background-color: #ff4500; /* Change to red when active */
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+}
+
+/* Options for Difficulty */
+#mode-container {
+  position: relative;
+}
+
+#difficulty-options {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  top: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00ff00;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.difficulty-btn {
+  margin: 5px 0;
+}
+
+#difficulty-options.active {
+  display: flex;
+}
