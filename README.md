@@ -24,7 +24,7 @@ I recently attended the **Flair Haven Web Development Workshop** at **Maulana Az
   - `↓` Down
   - `←` Left
   - `→` Right
-- Eat the green food to grow and increase your score.
+- Eat the apple to grow and increase your score.
 - The game ends if the snake hits the walls or its own body.
   
 ## 💻 Installation and Setup
