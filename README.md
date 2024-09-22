@@ -2,9 +2,9 @@
 
 A classic Snake Game built using **HTML5 Canvas**, **JavaScript**, and **CSS**. Control the snake, eat the food, and grow as long as possible while avoiding collisions with the walls and your own body!
 
-## 🎮 Demo
+## 🎮 Screenshot
 
-You can play the game [here](#).
+![Snake game](https://github.com/user-attachments/assets/aa83ecc8-8d34-47f3-b2dc-1b74ef5e3506)
 
 ## 🚀 Features
 
@@ -33,4 +33,4 @@ I recently attended the **Flair Haven Web Development Workshop** at **Maulana Az
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/snake-game.git
+   git clone https://github.com/tulsirampathe/Snake-Game.git
