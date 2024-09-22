@@ -12,8 +12,6 @@ A classic Snake Game built using **HTML5 Canvas**, **JavaScript**, and **CSS**. 
 - **Score tracking:** Tracks the current score and maintains a record of the best score.
 - **Dynamic Difficulty:** Option to change snake speed based on difficulty (Easy, Medium, Hard).
 - **Game over detection:** Ends the game when the snake hits the walls or itself.
-- **Snake head customization:** Realistic snake head with dynamic eye direction based on movement.
-- **Responsive Design:** Adjusts to different screen sizes for a smooth experience.
   
 ## 📚 Where did I get the idea for this game?
 
